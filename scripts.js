@@ -14,8 +14,6 @@ const Modal = {
 }
 
 
-
-
 function calcular_simulacao() {
     // Declaração de variáveis
     var nome, mensalidade, tempo, resultado;
@@ -26,13 +24,15 @@ function calcular_simulacao() {
     tempo = $("#tempo").val()
 
     //taxa de juros
-    var taxaJuros = 0.05;
+    var taxaJuros = 0.05; //Taxa de 5%
 
     // Processamento de Dados
 
-    var conta = mensalidade * Math.pow((1 + taxaJuros), tempo);
+    var total = mensalidade * Math.pow((1 + taxaJuros), tempo);
 
-    var resultado = conta.toString(); //Converte o total para string
+    // var total = (mensalidade * (1+taxaJuros) * ((Math.pow(1+taxaJuros,tempo)-1)/taxaJuros)).toFixed(2);
+
+    var resultado = total.toString(); //Converte o total para string
 
     // Saída de Dados
     $(".result-nome").html(nome);

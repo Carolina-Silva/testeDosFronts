@@ -11,7 +11,7 @@ body {
 /* HEADER =================================== */
 
 header {
-    background: #0D4014;
+    background: #4682B4;
     padding: 2rem 0 2rem;
     text-align: center;
 }
@@ -48,17 +48,17 @@ a{
     text-decoration: none;
     border: none;
     color: white;
-    background: #49aa26;
+    background: #4682B4;
     padding: 1rem;
     border-radius: 0.25rem;
     cursor: pointer;
 }
 a:hover{
-    background: #3dd705;
+    background: #5e9ed3;
 }
 .voltar{
-    color: #49aa26;
-    border: 2px #49aa26 solid;
+    color: #4682B4;
+    border: 2px #4682B4 solid;
     background: none;
     border-radius: 0.25rem;
     padding: 1rem;
