@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance$</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Finance$</h1>
+    </header>
+    <main class="container">
+        <section id="simular">
+            <form class=" form-simular" method="POST">
+                <h2>Simular Investimento</h2>
+                    <label for="nome" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="nome" name="nome" aria-describedby="Nome do usuario">
+
+                    <label for="mensalidade" class="form-label">Mensalidade</label>
+                    <input type="number"class="form-control" id="mensalidade" name="mensalidade" aria-describedby="Mensalidade a ser paga">
+
+        
+                    <label for="tempo" class="form-label">Tempo <span>(em anos)</span></label>
+                    <input type="number" class="form-control" id="tempo" name="tempo" aria-describedby="Tempo do investimento">
+    
+                <a type="submit" class="button new" onclick="Modal.open(); calcular_simulacao(); return false;">Simular</a>
+            </form>
+            
+                
+
+        </section>
+    </main>
+
+    <div class="modal-overlay">
+        <div class="modal">
+            <div id="result">
+                <h2>Simulação Concluida!</h2>
+                    <p>Olá <span class="result-nome"></span></p>
+                    <p>Juntando R$<span class="result-mensalidade">...</span>  todo mês, você terá</p>
+                    <p>R$<span class="result-resultado"><span</p>
+                    <p>em <span class="result-tempo"></span> anos</p>
+                    <div>
+                        <a onclick="Modal.close()"
+                        href="#" 
+                        class="button voltar"
+                        >Simular Novamente</a>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Finance$</p>
+    </footer>
+
+
+<script src="./scripts.js"></script>
+
+</body>
+
+</html>
